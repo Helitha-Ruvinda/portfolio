@@ -57,7 +57,7 @@
 									     data-rotate='[ "Developer.", "Problem Solver.", "Competitor." ]'></span>
 								</h2>								<div class="d-flex flex-column flex-sm-row justify-content-center align-items-center mt-4 contact-links">
 								  <a href="tel:+94714090425" class="btn btn-light m-2 text-dark"><span class="ion-ios-call"></span> +94 714090425</a>
-								  <a href="mailto:helithaweerasinghe4101@gmail.com" class="btn btn-light m-2 text-dark"><span class="ion-ios-mail"></span> Email Me</a>
+								  <a href="mailto:helithaweerasinghe4101@gmail.com" onclick="window.open(this.href); return false;" class="btn btn-light m-2 text-dark" rel="noopener"><span class="ion-ios-mail"></span> Email Me</a>
 								  <a href="https://www.linkedin.com/in/helitha-ruvinda-300064315/" target="_blank" class="btn btn-light m-2 text-dark"><span class="ion-logo-linkedin"></span> LinkedIn</a>
 								  <a href="https://github.com/Helitha-Ruvinda" target="_blank" class="btn btn-light m-2 text-dark"><span class="ion-logo-github"></span> GitHub</a>
 								</div>
@@ -77,9 +77,12 @@
     	<div class="container">
     		<div class="row d-flex no-gutters">
     			<div class="col-md-6 col-lg-6 d-flex justify-content-center">
-    				<div class="img-about d-flex align-items-center justify-content-center">
+    				<div class="img-about d-flex flex-column align-items-center justify-content-center">
     					<div class="profile-photo-card shadow-sm">
     						<img src="images/Helitha2.png" alt="Helitha Weerasinghe" class="img-fluid profile-photo">
+    					</div>
+    					<div class="mt-3 text-center">
+    						<a href="files/Helitha_Weerasinghe_CV.pdf" target="_blank" rel="noopener" class="btn btn-primary py-3 px-3">Download CV</a>
     					</div>
     				</div>
     			</div>
@@ -88,58 +91,78 @@
 		          <div class="col-md-12 heading-section ftco-animate">
 		          	<h1 class="big">About</h1>
 		            <h2 class="mb-4">About Me</h2>
-		            <p>I am an Electronics and Telecommunications Engineering undergraduate at the University of Moratuwa, passionate about embedded systems, power quality analytics, and competitive robotics. I specialize in STM32/ESP32 firmware, PCB design, CAD, and real-time signal processing, and I enjoy turning practical ideas into competition-ready hardware prototypes.</p>
+		            <p>I am an Electronics and Telecommunications Engineering undergraduate at the University of Moratuwa, passionate about embedded systems, Machine Learning, and competitive robotics. I specialize in STM32/ESP32 firmware, PCB design, CAD, and real time signal processing, and I enjoy turning practical ideas into real world hardware prototypes.</p>
 		          </div>
 		        </div>
 
 	        <!-- Highlights: quick visual summary -->
 	        <div class="row mt-4">
 	          <div class="col-md-4 d-flex align-items-stretch">
-	            <div class="services-1 shadow p-3 w-100 text-center">
+	            <div class="services-1 shadow p-3 w-100 text-center d-flex flex-column justify-content-center h-100">
 	              <span class="icon d-flex align-items-center justify-content-center mb-2"><i class="flaticon-ux-design"></i></span>
 	              <h4 class="mb-2">Embedded Systems</h4>
-	              <p class="mb-0">Realtime firmware, STM32/ESP32, ADC & control loops.</p>
+	              <p class="mb-0">Developing robust firmware and hardware solutions for real-time processing and control.</p>
 	            </div>
 	          </div>
 	          <div class="col-md-4 d-flex align-items-stretch">
-	            <div class="services-1 shadow p-3 w-100 text-center">
+	            <div class="services-1 shadow p-3 w-100 text-center d-flex flex-column justify-content-center h-100">
 	              <span class="icon d-flex align-items-center justify-content-center mb-2">
-	                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-	                  <rect x="6" y="7" width="12" height="9" rx="2" />
-	                  <circle cx="9" cy="11" r="1" />
-	                  <circle cx="15" cy="11" r="1" />
-	                  <path d="M9 15h6" />
-	                  <path d="M10 7V5" />
-	                  <path d="M14 7V5" />
-	                  <path d="M8 4l1 2" />
-	                  <path d="M16 4l-1 2" />
+	                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+	                  <g stroke="#0b97a7" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+	                    <!-- Base layers -->
+	                    <rect x="14" y="48" width="36" height="6" rx="3" fill="none" />
+	                    <rect x="22" y="44" width="20" height="4" rx="2" fill="none" />
+
+	                    <!-- Shoulder joint -->
+	                    <circle cx="20" cy="40" r="4" fill="none" />
+
+	                    <!-- Lower arm -->
+	                    <path d="M20 40 L30 20" />
+	                    <circle cx="30" cy="20" r="3.5" fill="none" />
+
+	                    <!-- Upper arm -->
+	                    <path d="M30 20 L44 12" />
+	                    <circle cx="44" cy="12" r="3.5" fill="none" />
+
+	                    <!-- Wrist and gripper -->
+	                    <path d="M44 12 L52 20" />
+	                    <path d="M52 20 L56 16" />
+	                    <path d="M52 20 L56 24" />
+	                  </g>
 	                </svg>
 	              </span>
 	              <h4 class="mb-2">Robotics</h4>
-	              <p class="mb-0">Micromouse navigation, PID control, and optimization for speed.</p>
+	              <p class="mb-0">Developing autonomous systems with advanced kinematics, sensor fusion, and optimized control algorithms.</p>
 	            </div>
 	          </div>
 	          <div class="col-md-4 d-flex align-items-stretch">
-	            <div class="services-1 shadow p-3 w-100 text-center">
+	            <div class="services-1 shadow p-3 w-100 text-center d-flex flex-column justify-content-center h-100">
 	              <span class="icon d-flex align-items-center justify-content-center mb-2">
-	                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-	                  <circle cx="7" cy="7" r="2" />
-	                  <circle cx="17" cy="7" r="2" />
-	                  <circle cx="12" cy="17" r="2" />
-	                  <path d="M9 7h6" />
-	                  <path d="M10.5 9.5L12 14.5" />
-	                  <path d="M13.5 9.5L12 14.5" />
+	                <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+	                  <circle cx="12" cy="16" r="3.2" />
+	                  <circle cx="12" cy="32" r="3.2" />
+	                  <circle cx="12" cy="48" r="3.2" />
+	                  <circle cx="32" cy="24" r="3.2" />
+	                  <circle cx="32" cy="40" r="3.2" />
+	                  <circle cx="52" cy="32" r="3.2" />
+
+	                  <line x1="15" y1="16" x2="29" y2="24" />
+	                  <line x1="15" y1="16" x2="29" y2="40" />
+	                  <line x1="15" y1="32" x2="29" y2="24" />
+	                  <line x1="15" y1="32" x2="29" y2="40" />
+	                  <line x1="15" y1="48" x2="29" y2="24" />
+	                  <line x1="15" y1="48" x2="29" y2="40" />
+
+	                  <line x1="35" y1="24" x2="49" y2="32" />
+	                  <line x1="35" y1="40" x2="49" y2="32" />
 	                </svg>
 	              </span>
 	              <h4 class="mb-2">Machine Learning</h4>
-	              <p class="mb-0">Signal processing for power quality and real-time dashboards.</p>
+	              <p class="mb-0">ML model development, signal processing, and real-time inference.</p>
 	            </div>
 	          </div>
 	        </div>
 
-	        <div class="mt-4">
-	          <p><a href="#" class="btn btn-primary py-3 px-3">Download CV</a></p>
-	        </div>
 	        </div>
         </div>
     	</div>
@@ -431,7 +454,7 @@
           <div class="col-md-4">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">About</h2>
-              <p>Focused on embedded systems, robotics, and power-quality engineering, with experience in competitive hardware development and real-time system design.</p>
+              <p>Focused on embedded systems, robotics, and Machine Learning, with experience in hardware development and real-time system design.</p>
             </div>
           </div>
           <div class="col-md-4">
@@ -450,9 +473,9 @@
             	<h2 class="ftco-heading-2">Have a Questions?</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">Sri Lanka</span></li>
+	                <li class="d-flex align-items-center"><span class="icon icon-map-marker mr-2"></span><span class="text">Sri Lanka</span></li>
 	                <li><a href="tel:+94714090425"><span class="icon icon-phone"></span><span class="text">Phone</span></a></li>
-	                <li><a href="mailto:helithaweerasinghe4101@gmail.com"><span class="icon icon-envelope"></span><span class="text">Email</span></a></li>
+	                <li><a href="mailto:helithaweerasinghe4101@gmail.com" onclick="window.open(this.href); return false;" rel="noopener"><span class="icon icon-envelope"></span><span class="text">Email</span></a></li>
 	                <li><a href="https://www.linkedin.com/in/helitha-ruvinda-300064315/" target="_blank" rel="noopener"><span class="icon icon-linkedin"></span><span class="text">LinkedIn</span></a></li>
 	                <li><a href="https://github.com/Helitha-Ruvinda" target="_blank" rel="noopener"><span class="icon icon-github"></span><span class="text">GitHub</span></a></li>
 	              </ul>
