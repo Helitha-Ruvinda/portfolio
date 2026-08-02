@@ -9783,3 +9783,27 @@ textarea.form-control {
     max-width: 280px;
   }
 }
+
+/* Tablet-specific adjustments to keep the three 'services' boxes aligned beside the profile photo
+   without changing other breakpoints. Targets typical tablet widths (e.g., Galaxy Tab S9 FE). */
+@media (min-width: 768px) and (max-width: 900px) {
+  /* Reduce the left padding applied by the utility class so the right column has more space */
+  .col-md-6.pl-md-5 {
+    padding-left: 1.5rem !important;
+  }
+
+  /* Make the service tiles slightly more compact so three can sit comfortably */
+  .services-1 {
+    padding: 0.75rem !important;
+  }
+
+  /* Slightly reduce spacing within the icon area */
+  .services-1 .icon {
+    margin-bottom: 0.4rem;
+  }
+
+  /* Prevent the profile card from forcing overflow at these widths */
+  .profile-photo-card {
+    max-width: 320px;
+  }
+}
