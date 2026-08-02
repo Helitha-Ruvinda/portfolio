@@ -8564,6 +8564,14 @@ h1, h2, h3, h4, h5,
 .bg-primary {
   background: #3e64ff; }
 
+/* On small/mobile screens the downward 'mouse' icon can overlap and block contact info.
+   Hide the icon at small widths to prevent obstruction while preserving it on larger viewports. */
+@media (max-width: 575.98px) {
+  .mouse {
+    display: none !important;
+  }
+}
+
 .btn {
   cursor: pointer;
   -webkit-border-radius: 40px;
